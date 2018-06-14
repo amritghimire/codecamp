@@ -14,11 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CodeCamp 2018
-tagline: A CodeCamp with the theme “Human Aid”
+topline: CodeCamp 2018
+welcome: Welcome to CodeCamp 2018
+tagline: A codecamp on theme "Human AID"
 date: 18-20 July, 2018
 email: codecamp2018@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Club of Technical Students (CoTS) and Innovative Computer Engineering Students’ Society (iCES)
+  <b>Club of Technical Students (CoTS)</b> and Innovative Computer Engineering Students’ Society (iCES)
   is organizing a CodeCamp with the theme “Human Aid” on the occasion of technical festival held
   in Paschimanchal Campus on the pre-scheduled date. This event will make use of Information 
   Technology to build and innovative applicable systems with the brainstorming of ideas to
@@ -46,6 +48,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: codecamp2018
 github_username:  jekyll
+email: mail@amritghimire.com
 
 # Build settings
 markdown: kramdown

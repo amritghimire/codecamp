@@ -1,0 +1,32 @@
+- date: 18 July
+  class: in active 
+  href: first-day
+  schedule: 
+    - time: 10:00 AM
+      work: Start program
+    - time: 12:00 PM
+      work: Lunch time
+    - time: 5:00 PM
+      work: Finish Day 1
+
+- date: 19 July
+  class:  
+  href: second-day
+  schedule: 
+    - time: 10:00 AM
+      work: Start program
+    - time: 12:00 PM
+      work: Lunch time
+    - time: 5:00 PM
+      work: Finish Day 2
+
+- date: 20 July
+  class:  
+  href: third-day
+- schedule:
+    - time: 10:00 AM 
+      work: Start program
+    - time: 12:00 PM
+      work: Start Presentation
+    - time: 5:00 PM
+      work: Finish Program
