@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: CodeCamp 2018
 topline: CodeCamp 2018
-welcome: Welcome to CodeCamp 2018
+welcome: Welcomes you to CodeCamp 2018
 tagline: A codecamp on theme "Human AID"
 date: 18-20 July, 2018
 email: codecamp2018@gmail.com

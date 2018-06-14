@@ -67,11 +67,11 @@ layout: default
 
                   <div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.class }}" id="{{ day.href }}">
                     <ul>
-                      {% for task in site.data.schedule %}
+                      {% for task in day.schedule %}
                       <li>
                         <div class="mu-single-event">
-                          <p class="mu-event-time">{{ task.work }}</p>
-                          <h3>Breakfast</h3>
+                          <p class="mu-event-time">{{ task.time }}</p>
+                          <h3>{{ task.work }}</h3>
                         </div>
                       </li>
                       {% endfor %}
@@ -214,13 +214,50 @@ layout: default
                     
                   <div class="form-group"> 
                     <select class="form-control" name="ticket" id="ticket">
-                      <option value="0">Basic ($12)</option>
-                      <option value="1">Standard ($22)</option>
-                      <option value="2">Premium ($45)</option>
+                      <option value="0">Inside Paschimanchal Campus</option>
+                      <option value="1">Inside Pokhara Valley</option>
+                      <option value="2">Outside Pokhara Valley</option>
                     </select>
                   </div>      
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">                
+                      <input type="text" class="form-control" placeholder="Team member Full Name" id="name" name="name-1" required="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">                
+                      <input type="email" class="form-control" placeholder="Enter Email address" id="email" name="email-1" required="">
+                    </div>     
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">                
+                      <input type="text" class="form-control" placeholder="Team member Full Name" id="name" name="name-2" required="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">                
+                      <input type="email" class="form-control" placeholder="Enter Email address" id="email" name="email-2" required="">
+                    </div>     
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea name="idea" id="idea" cols="30" rows="10"  class="form-control" placeholder="Describe your idea in brief." required="required"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+
 
                 <button type="submit" class="mu-reg-submit-btn">SUBMIT</button>
 
@@ -243,87 +280,29 @@ layout: default
 
             <div class="mu-title-area">
               <h2 class="mu-title">FAQ</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda ut molestias doloremque ipsam, fugit laborum totam, pariatur est cumque at, repudiandae officia ex dolores quas minus optio, iusto soluta?</p>
+              <p>Feel free to contact us using the contact form below if you couldn't find your question in the Frequently Asked Question.</p>
             </div>
 
             <div class="mu-faq-content">
 
               <div class="panel-group" id="accordion">
-
+                    {% for qa in site.data.faq %}
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
-                            <span class="fa fa-angle-down"></span> Lorem ipsum dolor sit amet.
+                            <span class="fa fa-angle-down"></span> {{ qa.question }}
                           </a>
                         </h4>
                       </div>
                       <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          {{ qa.answer }}
                         </div>
                       </div>
                     </div>
+                    {% endfor %}
 
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                            <span class="fa fa-angle-up"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                            <span class="fa fa-angle-up"></span> Lorem ipsum dolor sit amet, consectetur. 
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                            <span class="fa fa-angle-up"></span> Lorem ipsum dolor sit amet, consectetur adipisicing. 
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                            <span class="fa fa-angle-up"></span> Lorem ipsum dolor sit amet, consectetur. 
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseFive" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div>
 
 
                 </div>
@@ -345,84 +324,19 @@ layout: default
             
             <div class="mu-title-area">
               <h2 class="mu-title">Our Sponsors</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda ut molestias doloremque ipsam, fugit laborum totam, pariatur est cumque at, repudiandae officia ex dolores quas minus optio, iusto soluta?</p>
+              <p>This program couldnot be this program if there was not the support of the sponsers in it.</p>
             </div>
             
             <!-- Start spnonsors brand logo -->
             <div class="mu-sponsors-content">
               <div class="row">
-              
+              {% for sponser in site.data.sponsers %}
                 <div class="col-md-2 col-sm-4 col-xs-4">
                   <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-1.png" alt="Brand Logo">
+                    <img src="assets/images/{{ site.data.sponsers" alt="Brand Logo">
                   </div>
                 </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-4.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                  <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-5.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-6.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-7.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-8.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-9.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                  <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-1.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
-                  </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
-                  </div>
-                </div>
+                {% endfor %}
 
               </div>
             </div>

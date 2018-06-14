@@ -3,30 +3,37 @@
   href: first-day
   schedule: 
     - time: 10:00 AM
-      work: Start program
+      work: inauguration
     - time: 12:00 PM
       work: Lunch time
+    - time: 3:00 PM
+      work: Tea break
     - time: 5:00 PM
-      work: Finish Day 1
+      work: Day 1 complete.
 
 - date: 19 July
   class:  
   href: second-day
   schedule: 
-    - time: 10:00 AM
-      work: Start program
+    - time: 8:00 AM
+      work: Break fast
     - time: 12:00 PM
       work: Lunch time
+    - time: 3:00 PM
+      work: Tea break
     - time: 5:00 PM
       work: Finish Day 2
 
 - date: 20 July
   class:  
-  href: third-day
-- schedule:
-    - time: 10:00 AM 
-      work: Start program
+  href: second-day
+  schedule: 
+    - time: 8:00 AM
+      work: Break fast
     - time: 12:00 PM
-      work: Start Presentation
+      work: Lunch time
+    - time: 12:30 PM
+      work: Presentation
     - time: 5:00 PM
-      work: Finish Program
+      work: Ending of Program
+
