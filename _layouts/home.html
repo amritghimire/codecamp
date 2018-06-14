@@ -188,7 +188,7 @@ layout: default
             </div>
 
             <div class="mu-register-content">
-              <form class="mu-register-form">
+              <form class="mu-register-form"  method="post" action="https://formspree.io/mail@amritghimire.com">
 
                 <div class="row">
                   <div class="col-md-6">
@@ -333,7 +333,7 @@ layout: default
               {% for sponser in site.data.sponsers %}
                 <div class="col-md-2 col-sm-4 col-xs-4">
                   <div class="mu-sponsors-single">
-                    <img src="assets/images/{{ site.data.sponsers" alt="Brand Logo">
+                    <img src="assets/images/{{ sponser.image }}" alt="Brand Logo">
                   </div>
                 </div>
                 {% endfor %}
@@ -359,7 +359,7 @@ layout: default
 
             <div class="mu-title-area">
               <h2 class="mu-heading-title">Contact Us</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+              <p>Feel free to message us.</p>
             </div>
 
             <!-- Start Contact Content -->
@@ -369,7 +369,7 @@ layout: default
               <div class="col-md-12">
                 <div class="mu-contact-form-area">
                   <div id="form-messages"></div>
-                    <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+                    <form id="ajax-contact" method="post" action="https://formspree.io/contact@amritghimire.com" class="mu-contact-form">
                       <div class="form-group">                
                         <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
                       </div>
