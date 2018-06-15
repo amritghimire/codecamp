@@ -369,7 +369,7 @@ layout: default
               <div class="col-md-12">
                 <div class="mu-contact-form-area">
                   <div id="form-messages"></div>
-                    <form id="ajax-contact" method="post" action="https://formspree.io/{{ site.email }}" class="mu-contact-form">
+			 <form action="https://formspree.io/contact@codecamp2018.com" method="POST" id="passthrough"  class="mu-contact-form"> <div id="recaptcha" style="text-align:center; display:inline-block"></div> 
                       <div class="form-group">                
                         <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
                       </div>
@@ -385,6 +385,7 @@ layout: default
                 </div>
               </div>
             </div>
+		   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> </script>
             <!-- End Contact Content -->
           </div>
         </div>
