@@ -48,7 +48,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: codecamp2018
 github_username:  jekyll
-email: mail@amritghimire.com
+email: contact@codecamp2018.com
+register_email: register@codecamp2018.com
 
 # Build settings
 markdown: kramdown
