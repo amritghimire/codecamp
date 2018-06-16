@@ -39,7 +39,44 @@ layout: default
   </section>
   <!-- End About -->
 
- 
+  <section id="mu-video">
+    <div class="mu-video-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="mu-video-area">
+              <h2>Code With Coffee Season 2</h2>
+              <br>
+              <hr>
+
+              {% comment %} <a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a> {% endcomment %}
+              <p class="code-with-coffee-link lead">An open coding competition titled ‘Code With Coffee.’ 
+                was organized by <b>Innovative computer Engineering Students' Society (i-CES)</b> on 29th Asar of 2074.
+                As a continuity to the competition, we are organizing <b>Code with Coffee Season 2</b> in joint collaboration of 
+                <b>i-CES and COTS</b> on Ashad 25th 2075. 
+                <br>
+                <hr>
+                <a class="btn btn-primary btn-lg" href="/code-with-coffee.html" role="button">Learn more »</a>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Video content -->
+    <div class="mu-video-content">
+      <div class="mu-video-iframe-area">
+        <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- End Video content -->
+
+  </section>
+  <!-- End Video -->
+
 
   <!-- Start Schedule  -->
   <section id="mu-schedule">
@@ -89,7 +126,7 @@ layout: default
     </div>
   </section>
   <!-- End Schedule -->
-
+  
   <!-- Start Speakers -->
   <section id="mu-speakers">
     <div class="container">
@@ -333,7 +370,7 @@ layout: default
               {% for sponser in site.data.sponsers %}
                 <div class="col-md-2 col-sm-4 col-xs-4">
                   <div class="mu-sponsors-single">
-                    <img src="assets/images/{{ sponser.image }}" alt="Brand Logo">
+                    <img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}">
                   </div>
                 </div>
                 {% endfor %}
