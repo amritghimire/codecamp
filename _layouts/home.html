@@ -11,7 +11,7 @@ layout: default
             <div class="row">
               <div class="col-md-6">
                 <div class="mu-about-left">
-                  <img class="" src="assets/images/about.jpg" alt="Men Speaker">
+                  <img class="" src="assets/images/about.png" alt="Code Camp 2018">
                 </div>
               </div>
               <div class="col-md-6">
@@ -370,7 +370,7 @@ layout: default
               {% for sponser in site.data.sponsers %}
                 <div class="col-md-2 col-sm-4 col-xs-4">
                   <div class="mu-sponsors-single">
-                    <img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}">
+                    <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"></a>
                   </div>
                 </div>
                 {% endfor %}

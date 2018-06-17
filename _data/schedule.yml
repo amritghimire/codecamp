@@ -1,4 +1,4 @@
-- date: 18 July
+- date: 17 July
   class: in active 
   href: first-day
   schedule: 
@@ -11,7 +11,7 @@
     - time: 5:00 PM
       work: Day 1 complete.
 
-- date: 19 July
+- date: 18 July
   class:  
   href: second-day
   schedule: 
@@ -24,7 +24,7 @@
     - time: 5:00 PM
       work: Finish Day 2
 
-- date: 20 July
+- date: 19 July
   class:  
   href: second-day
   schedule: 
