@@ -148,11 +148,19 @@ layout: default
                 <div class="mu-single-speakers">
                   <img src="assets/images/team/{{ member.photo }}" alt="speaker img">
                   <div class="mu-single-speakers-info">
+                    {% if member.link != null %}
+                    <a href="{{ member.link }}">
+                      {% endif %}
                     <h3>{{ member.name }}</h3>
                     <p>{{ member.title }}</p>
+                    {% if member.link != null %}
+                    </a>
+                      {% endif %}
                     <ul class="mu-single-speakers-social">
                       <li><a href="http://facebook.com/{{ member.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                      {% if member.twitter != null %}
                       <li><a href="http://twitter.com/{{ member.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                        {% endif %}
                     </ul>
                   </div>
                 </div>
@@ -353,7 +361,7 @@ layout: default
   <!-- End FAQ -->
 
   <!-- Start Sponsors -->
-  <section id="mu-sponsors">
+  {% comment %} <section id="mu-sponsors">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -384,7 +392,7 @@ layout: default
       </div>
     </div>
   </section>
-  <!-- End Sponsors -->
+  <!-- End Sponsors --> {% endcomment %}
 
 
   <!-- Start Contact -->
