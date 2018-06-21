@@ -277,14 +277,14 @@ button:focus {
 .mu-hero-featured-area {
 	display: inline;
 	float: left;
-	padding: 60px 0 150px;
+	padding: 120px 0 150px;
 	width: 100%;
 }
 
 .mu-hero-featured-content {
 	display: inline;
 	float: right;
-	margin-top: 50px;
+	margin-top: 15px;
 	text-align: center;
 	width: 100%;
 }
