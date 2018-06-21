@@ -1,32 +1,38 @@
-- date: 17 July
+- date: 18 July
   class: in active 
   href: first-day
   schedule: 
-    - time: 10:00 AM
-      work: inauguration
-    - time: 12:00 PM
-      work: Lunch time
-    - time: 3:00 PM
-      work: Tea break
-    - time: 5:00 PM
-      work: Day 1 complete.
-
-- date: 18 July
-  class:  
-  href: second-day
-  schedule: 
-    - time: 8:00 AM
-      work: Break fast
-    - time: 12:00 PM
-      work: Lunch time
-    - time: 3:00 PM
-      work: Tea break
-    - time: 5:00 PM
-      work: Finish Day 2
+    - time: 9:00 AM to 11:00 AM 
+      work: inauguration and tea
+    - time: 11:00 AM to 2:00 PM 
+      work: Coding
+    - time: 2:00 PM to 3:00 PM
+      work: Lunch
+    - time: 3:00 PM to 5:00 PM
+      work: Coding
+    - time: 5:00 PM to 6:00 PM
+      work: Hi-Tea and networking.
 
 - date: 19 July
   class:  
   href: second-day
+  schedule: 
+    - time: 8:00 AM
+      work: Check in 
+    - time: 8:00 AM to 8:30 AM
+      work: Breakfast
+    - time: 8:30 AM to 1:30 PM
+      work: Coding
+    - time: 1:30 PM to 2:30 PM
+      work: Lunch
+    - time: 2:30 PM to 5:00 PM
+      work: coding
+    - time: 5:00 PM to 5:30 PM
+      work: Hi-Tea
+
+- date: 20 July
+  class:  
+  href: third-day
   schedule: 
     - time: 8:00 AM
       work: Break fast
