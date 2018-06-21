@@ -219,21 +219,24 @@ button:focus {
 .btn-round-lg{
 	border-radius: 22.5px;
 	color: #083F5C;
+	margin-top: 10vh;
 	}
 	.btn-round{
 	border-radius: 17px;
 	color: #083F5C;
+	margin-top: 10vh;
 	}
 	.btn-round-sm{
 	border-radius: 15px;
 	color: #083F5C;
+	margin-top: 10vh;
 	}
 	.btn-round-xs{
 	border-radius: 11px;
 	padding-left: 10px;
 	padding-right: 10px;
 	color: #083F5C;
-
+	margin-top: 10vh;
 	}
 	
 /*--------------------*/
@@ -337,7 +340,7 @@ button:focus {
 .mu-event-counter-area {
 	display: inline;
 	float: left;
-	margin-top: 50px;
+	margin-top: 10vh;
 	width: 100%;
 }
 
