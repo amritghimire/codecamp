@@ -215,13 +215,33 @@ button:focus {
 }
 
 
+.btn-round-lg{
+	border-radius: 22.5px;
+	color: #083F5C;
+	}
+	.btn-round{
+	border-radius: 17px;
+	color: #083F5C;
+	}
+	.btn-round-sm{
+	border-radius: 15px;
+	color: #083F5C;
+	}
+	.btn-round-xs{
+	border-radius: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #083F5C;
 
+	}
+	
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
 
 #mu-hero {
 	background: #114E8E url("assets/images/head-featured-bg.png") no-repeat fixed center center;
+	height: 100vh;
 	display: inline;
 	float: left;
 	width: 100%;
