@@ -15,21 +15,21 @@
 # in the templates via {{ site.myvariable }}.
 title: CodeCamp 2018
 topline: CodeCamp 2018
-welcome: Welcomes you to CodeCamp 2018
+welcome: Welcome you to CodeCamp 2018
 tagline: A codecamp on theme "Human AID"
 date: 17-19 July, 2018
 email: codecamp2018@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  <b>Club of Technical Students (CoTS)</b> and Innovative Computer Engineering Students’ Society (iCES)
-  is organizing a CodeCamp with the theme “Human Aid” on the occasion of technical festival held
+  <b>Innovative Computer Engineering Students’ Society (iCES)</b> and <b>Club of Technical Students (CoTS)</b> 
+  are organizing a CodeCamp with the theme “Human Aid” on the occasion of technical festival held
   in Paschimanchal Campus on the pre-scheduled date. This event will make use of Information 
-  Technology to build and innovative applicable systems with the brainstorming of ideas to
+  Technology to build and innovate applicable systems with the brainstorming of ideas to
   solve real-world problems.
 more_about: >-
-  CodeCamp 2018 is a 3 day event on theme “Human Aid” focusing on the development of innovative
+  CodeCamp 2018 is a 3 days event on theme “Human Aid” focusing on the development of innovative
   solutions to address the problems faced by differently abled people. The event  aims to attract
-  most energetic, talent and vibrant youths from all around the country to compete with each 
-  other to develop the most elegant solution. The participants will brainstorm, code  and create
+  most energetic, talented and vibrant youths from all around the country to compete with one 
+  another to develop the most elegant solution. The participants will brainstorm, code  and create
   a working prototype within the event time. Participants are selected through a rigorous 
   application process. They are required to submit their ideas by Asar 20. Registration fee
   for each team is Rs. 1500. Only the team with selected idea is eligible for participating 
