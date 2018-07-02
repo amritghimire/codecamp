@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 more_about: >-
   CodeCamp 2018 is a three-day event entirely focused on developing and promoting appropriate, innovative solutions,
   especially to address the needs and problems faced by differently abled people. Participants are selected through a
-  rigorous selection process based on the ideas they submit [the idea submission deadline is 23rd Asar i.e. 7th July].
+  rigorous selection process based on the ideas they submit [the idea submission deadline is 23rd Asar (i.e. 7th July).
   The selected participants are then required to register for the event with the registration fee of NRs. 1500. During the event,
   the participants are expected to further brainstorm their selected ideas, code and create a working prototype and pitch their ideas
   in the span of three days.
@@ -40,7 +40,7 @@ participation_text: >-
   The result of seleted teams will be posted in Asar 26.
 registeration_text: >-
   Team (3 members at max and 2 at min) must register their team names for “CodeCamp” with 
-  entry fee Rs.1500 (includes lunch set).
+  entry fee Rs.1500.
   Every Team member must provide 2 passport size photos to the coordinator. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
