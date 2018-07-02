@@ -981,7 +981,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-	background: #114E8E url("assets/images/head-featured-bg.png") no-repeat fixed center center;
+	/* background: #114E8E url("assets/images/head-featured-bg.png") no-repeat fixed center center; */
 	background-size: cover;
 	display: inline;
 	float: left;
@@ -989,7 +989,7 @@ button:focus {
 	width: 100%;
 }
 
-#mu-register::before {
+/* #mu-register::before {
 	background: rgba(0,0,0,0.9);
 	bottom: 0;
 	content: '';
@@ -998,7 +998,7 @@ button:focus {
 	right: 0;
 	position: absolute;
 	opacity: 0.9;
-}
+} */
 
 .mu-register-area {
 	display: inline;
