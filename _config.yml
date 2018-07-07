@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: CodeCamp 2018
-topline: CodeCamp 2018
-welcome: Welcome to Human Aid CodeCamp 2018
+title: Genese CodeCamp 2018
+topline: Genese CodeCamp 2018
+welcome: Welcome to Genese CodeCamp 2018
 tagline: A codecamp on theme "Human AID"
 date: 18-20 July, 2018
 email: codecamp2018@gmail.com

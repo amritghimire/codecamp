@@ -75,7 +75,41 @@ layout: default
 
   </section>
   <!-- End Video -->
+ <!-- Start Sponsors -->
+ {% comment %}
+ <section id="mu-sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mu-sponsors-area">
+          
+          <div class="mu-title-area">
+            <h2 class="mu-title">Our Sponsors</h2>
+            <!-- <p>This program couldnot be this program if there was not the support of the sponsers in it.</p> -->
+          </div>
+          
+          <!-- Start spnonsors brand logo -->
+          <div class="mu-sponsors-content">
+            <div class="row">
+            {% for sponser in site.data.sponsers %}
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <div class="mu-sponsors-single">
+                  <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"></a>
+                </div>
+              </div>
+              {% endfor %}
 
+            </div>
+          </div>
+          <!-- End spnonsors brand logo -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcomment %}
+<!-- End Sponsors --> 
 
   <!-- Start Schedule  -->
   <section id="mu-schedule">
@@ -126,55 +160,6 @@ layout: default
   </section>
   <!-- End Schedule -->
   
-  <!-- Start Speakers -->
-  <section id="mu-speakers">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-speakers-area">
-
-            <div class="mu-title-area">
-              <h2 class="mu-title">Our Team</h2>
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p> -->
-            </div>
-
-            <!-- Start Speakers Content -->
-            <div class="mu-speakers-content">
-
-              <div class="mu-speakers-slider">
-                {% for member in site.data.teams %}
-                <!-- Start single speaker -->
-                <div class="mu-single-speakers">
-                  <img src="assets/images/team/{{ member.photo }}" alt="speaker img">
-                  <div class="mu-single-speakers-info">
-                    {% if member.link != null %}
-                    <a href="{{ member.link }}">
-                      {% endif %}
-                    <h3>{{ member.name }}</h3>
-                    <p>{{ member.title }}</p>
-                    {% if member.link != null %}
-                    </a>
-                      {% endif %}
-                    <ul class="mu-single-speakers-social">
-                      <li><a href="http://facebook.com/{{ member.facebook }}"><i class="fa fa-facebook"></i></a></li>
-                      {% if member.twitter != null %}
-                      <li><a href="http://twitter.com/{{ member.twitter }}"><i class="fa fa-twitter"></i></a></li>
-                        {% endif %}
-                    </ul>
-                  </div>
-                </div>
-                <!-- End single speaker -->
-                {% endfor %}
-              </div>
-            </div>
-            <!-- End Speakers Content -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Speakers -->
 
   <!-- Start Venue -->
   <section id="mu-venue">
@@ -287,40 +272,6 @@ layout: default
   </section>
   <!-- End FAQ -->
 
-  <!-- Start Sponsors -->
-  {% comment %} <section id="mu-sponsors">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-sponsors-area">
-            
-            <div class="mu-title-area">
-              <h2 class="mu-title">Our Sponsors</h2>
-              <p>This program couldnot be this program if there was not the support of the sponsers in it.</p>
-            </div>
-            
-            <!-- Start spnonsors brand logo -->
-            <div class="mu-sponsors-content">
-              <div class="row">
-              {% for sponser in site.data.sponsers %}
-                <div class="col-md-2 col-sm-4 col-xs-4">
-                  <div class="mu-sponsors-single">
-                    <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"></a>
-                  </div>
-                </div>
-                {% endfor %}
-
-              </div>
-            </div>
-            <!-- End spnonsors brand logo -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Sponsors --> {% endcomment %}
-
 
   <!-- Start Contact -->
   <section id="mu-contact">
@@ -365,3 +316,53 @@ layout: default
     </div>
   </section>
   <!-- End Contact -->
+
+  <!-- Start Speakers -->
+  <section id="mu-speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-speakers-area">
+
+            <div class="mu-title-area">
+              <h2 class="mu-title">Our Team</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p> -->
+            </div>
+
+            <!-- Start Speakers Content -->
+            <div class="mu-speakers-content">
+
+              <div class="mu-speakers-slider">
+                {% for member in site.data.teams %}
+                <!-- Start single speaker -->
+                <div class="mu-single-speakers">
+                  <img src="assets/images/team/{{ member.photo }}" alt="speaker img">
+                  <div class="mu-single-speakers-info">
+                    {% if member.link != null %}
+                    <a href="{{ member.link }}">
+                      {% endif %}
+                    <h3>{{ member.name }}</h3>
+                    <p>{{ member.title }}</p>
+                    {% if member.link != null %}
+                    </a>
+                      {% endif %}
+                    <ul class="mu-single-speakers-social">
+                      <li><a href="http://facebook.com/{{ member.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                      {% if member.twitter != null %}
+                      <li><a href="http://twitter.com/{{ member.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                        {% endif %}
+                    </ul>
+                  </div>
+                </div>
+                <!-- End single speaker -->
+                {% endfor %}
+              </div>
+            </div>
+            <!-- End Speakers Content -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Speakers -->
