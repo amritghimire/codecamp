@@ -75,41 +75,6 @@ layout: default
 
   </section>
   <!-- End Video -->
- <!-- Start Sponsors -->
- {% comment %}
- <section id="mu-sponsors">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="mu-sponsors-area">
-          
-          <div class="mu-title-area">
-            <h2 class="mu-title">Our Sponsors</h2>
-            <!-- <p>This program couldnot be this program if there was not the support of the sponsers in it.</p> -->
-          </div>
-          
-          <!-- Start spnonsors brand logo -->
-          <div class="mu-sponsors-content">
-            <div class="row">
-            {% for sponser in site.data.sponsers %}
-              <div class="col-md-2 col-sm-4 col-xs-4">
-                <div class="mu-sponsors-single">
-                  <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"></a>
-                </div>
-              </div>
-              {% endfor %}
-
-            </div>
-          </div>
-          <!-- End spnonsors brand logo -->
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endcomment %}
-<!-- End Sponsors --> 
 
   <!-- Start Schedule  -->
   <section id="mu-schedule">
@@ -273,50 +238,6 @@ layout: default
   <!-- End FAQ -->
 
 
-  <!-- Start Contact -->
-  <section id="mu-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-contact-area">
-
-            <div class="mu-title-area">
-              <h2 class="mu-heading-title">Contact Us</h2>
-              <p>Feel free to message us.</p>
-            </div>
-
-            <!-- Start Contact Content -->
-            <div class="mu-contact-content">
-              <div class="row">
-
-              <div class="col-md-12">
-                <div class="mu-contact-form-area">
-                  <div id="form-messages"></div>
-			 <form action="https://formspree.io/contact@codecamp2018.com" method="POST" id="ps"  class="mu-contact-form"> <div id="recaptcha" style="text-align:center; display:inline-block"></div> 
-                      <div class="form-group">                
-                        <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
-                      </div>
-                      <div class="form-group">                
-                        <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-                      </div>              
-                      <div class="form-group">
-                        <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
-                      </div>
-                      <button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
-                          </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-		   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> </script>
-            <!-- End Contact Content -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact -->
-
   <!-- Start Speakers -->
   <section id="mu-speakers">
     <div class="container">
@@ -366,3 +287,114 @@ layout: default
     </div>
   </section>
   <!-- End Speakers -->
+
+ <!-- Start Sponsors -->
+ <section id="mu-sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-sponsors-area">
+            
+            <div class="mu-title-area">
+              <h2 class="mu-title">Our Sponsors</h2>
+              <!-- <p>This program couldnot be this program if there was not the support of the sponsers in it.</p> -->
+            </div>
+            <div class="mu-sponsors-content">
+                <div class="row">
+                {% for sponser in site.data.highersponsers %}
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="mu-sponsors-single text-center">
+                      <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"><hr><h4>{{ sponser.type }}</h4><h3>{{ sponser.brand }}</h3></a>
+                    </div>
+                  </div>
+                  {% endfor %}
+    
+                </div>
+              </div>
+
+              <div class="row">
+                <hr>
+              </div>
+              <div class="mu-sponsors-content">
+                  <div class="row">
+                  {% for sponser in site.data.partner %}
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                      <div class="mu-sponsors-single text-center">
+                        <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}" class="img-responsive" height="100px"><hr><h5>{{ sponser.type }} Partner</h5><h6>{{ sponser.brand }}</h6></a>
+                      </div>
+                    </div>
+                    {% endfor %}
+      
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <hr>
+                </div>
+              
+            <!-- Start spnonsors brand logo -->
+            <div class="mu-sponsors-content">
+              <div class="row">
+              {% for sponser in site.data.sponsers %}
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                  <div class="mu-sponsors-single text-center">
+                    <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"><hr>{{ sponser.brand }}</a>
+                  </div>
+                </div>
+                {% endfor %}
+  
+              </div>
+            </div>
+            <!-- End spnonsors brand logo -->
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Sponsors --> 
+  
+
+  <!-- Start Contact -->
+  <section id="mu-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-contact-area">
+
+            <div class="mu-title-area">
+              <h2 class="mu-heading-title">Contact Us</h2>
+              <p>Feel free to message us.</p>
+            </div>
+
+            <!-- Start Contact Content -->
+            <div class="mu-contact-content">
+              <div class="row">
+
+              <div class="col-md-12">
+                <div class="mu-contact-form-area">
+                  <div id="form-messages"></div>
+			 <form action="https://formspree.io/contact@codecamp2018.com" method="POST" id="ps"  class="mu-contact-form"> <div id="recaptcha" style="text-align:center; display:inline-block"></div> 
+                      <div class="form-group">                
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">                
+                        <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                      </div>              
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                      </div>
+                      <button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
+                          </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+		   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> </script>
+            <!-- End Contact Content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact -->
