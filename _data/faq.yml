@@ -5,7 +5,7 @@
   
 - question: What is the last date for the registeration?
   answer: >-
-    Participants are required to submit their ideas by Asar 23. 
+    Participants are required to submit their ideas by Asar 26(extended). 
 
 # - question: What is CodeCamp?
 #   answer: CodeCamp is a programme designed to get young people learn, write and compete code.
@@ -25,8 +25,8 @@
   answer: A designated selection committee will be responsible for the selection process. The main aspects for selecting team for codecamp are creativity, validity, feasibility and applicability in the idea presented by teams. 
 - question: How will participants be selected?
   answer: The participants is required to register their team with their idea on codecamp's theme describing in brief. The idea will be evaluated by our selection jury and team with great idea will be selected.
-# - question: Do you accept the hardware projects ?
-#   answer: We encourge all types of solutions that address the thematic problems.
-# - question: Will you fund our hardware projects ?
-#   answer: We will try to help as much as possible. Please contact us with more details. 
+- question: Do you accept the hardware projects ?
+  answer: We encourge all types of solutions that address the thematic problems.
+- question: Will you fund our hardware projects ?
+  answer: We will try to help as much as possible. Please contact us with more details. 
 
