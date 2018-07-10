@@ -68,7 +68,7 @@ layout: default
     <div class="mu-video-content">
       <div class="mu-video-iframe-area">
         <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
+        {% comment %} <iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe> {% endcomment %}
       </div>
     </div>
     <!-- End Video content -->
@@ -296,49 +296,52 @@ layout: default
           <div class="mu-sponsors-area">
             
             <div class="mu-title-area">
-              <h2 class="mu-title">Our Sponsors</h2>
+              <h2 class="mu-title"><u>Our Sponsers</u></h2>
               <!-- <p>This program couldnot be this program if there was not the support of the sponsers in it.</p> -->
             </div>
             <div class="mu-sponsors-content">
                 <div class="row">
                 {% for sponser in site.data.highersponsers %}
-                  <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="mu-sponsors-single text-center">
-                      <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"><hr><h4>{{ sponser.type }}</h4><h3>{{ sponser.brand }}</h3></a>
+                        <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><h5>{{ sponser.type }}</h5> </a>
+                      <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}" class="sponserHigher"></a>
+
                     </div>
                   </div>
                   {% endfor %}
-    
                 </div>
-              </div>
-
-              <div class="row">
-                <hr>
-              </div>
-              <div class="mu-sponsors-content">
-                  <div class="row">
-                  {% for sponser in site.data.partner %}
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="mu-sponsors-single text-center">
-                        <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}" class="img-responsive" height="100px"><hr><h5>{{ sponser.type }} Partner</h5><h6>{{ sponser.brand }}</h6></a>
-                      </div>
-                    </div>
-                    {% endfor %}
-      
-                  </div>
-                </div>
-  
-                <div class="row">
-                  <hr>
-                </div>
-              
-            <!-- Start spnonsors brand logo -->
+            </div>
+            <div class="clearfix">
+            </div>
             <div class="mu-sponsors-content">
               <div class="row">
-              {% for sponser in site.data.sponsers %}
-                <div class="col-md-2 col-sm-4 col-xs-4">
+                      <h3 class="mu-title text-center"><u>Our Partners:</u></h3>
+              </div>
+              <div class="row">
+              {% for sponser in site.data.partner %}
+                <div class="col-md-2 col-sm-12 col-xs-12">
                   <div class="mu-sponsors-single text-center">
-                    <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}"><hr>{{ sponser.brand }}</a>
+                    <br><br> <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><h5>{{ sponser.type }}</h5> </a>
+                    <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}" class="partners"></a>
+
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+          </div>
+          
+            
+            <!-- Start spnonsors brand logo -->
+            <div class="mu-sponsors-content">
+                <div class="row">
+                    <h3 class="mu-title text-center"><u>Sponsored By:</u></h3>
+            </div>
+              <div class="row">
+              {% for sponser in site.data.sponsers %}
+                <div class="col-md-3 col-sm-4 col-xs-4">
+                  <div class="mu-sponsors-single text-center">
+                    <a href="{{ sponser.link }}" data-toggle="tooltip" title="{{ sponser.brand }}"><img src="assets/images/sponser/{{ sponser.image }}" alt="{{ sponser.brand }}"  title="{{ sponser.brand }}" class="sponser-image"><br>{{ sponser.brand }}</a>
                   </div>
                 </div>
                 {% endfor %}

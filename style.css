@@ -441,7 +441,7 @@ button:focus {
 }
 
 .mu-title {
-	color: #1c1b1b;
+	/* color: #1c1b1b; */
 	margin-bottom: 15px;
 	padding: 0;
 	z-index: 10;
@@ -1074,10 +1074,11 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-	background-color: #fff;
+	background-color: #114E8E;
 	display: inline;
 	float: left;
 	width: 100%;
+	color: white;
 }
 
 .mu-sponsors-area {
@@ -1103,7 +1104,28 @@ button:focus {
 	width: 100%;
 }
 
+.sponserHigher{
+	width:  auto;
+	height: 125px;
+	max-width: 100%;
+}
 
+.sponser-image{
+	width:  auto;
+	height: 105px;
+	max-width: 100%;
+}
+
+.partners{
+	width:  auto;
+	height: 100px;
+	max-width: 100%;
+}
+
+
+.mu-sponsors-single a{
+	color: white;
+}
 /*--------------------*/
 /* FAQ */
 /*--------------------*/
