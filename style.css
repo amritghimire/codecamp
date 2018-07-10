@@ -1110,6 +1110,12 @@ button:focus {
 	max-width: 100%;
 }
 
+.mini-logo{
+	height: 75px;
+	width: auto;
+	max-width: 100%;
+}
+
 .sponser-image{
 	width:  auto;
 	height: 105px;
