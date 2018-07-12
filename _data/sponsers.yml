@@ -1,26 +1,33 @@
 - image: it-deurali-logo.png
   link: http://itdeurali.com
   brand: IT Deurali
+  
 - image: codeshashtra-dark.png
-  link: http://itdeurali.com
+  link: http://codesastra.com
   brand: CodeShastra
+
 - image: jankari.png
-  link: http://itdeurali.com
+  link: https://www.jankaritech.com
   brand: Jankari Technology
+
 - image: vtech.png
-  link: http://itdeurali.com
+  link: http://www.vtechnepal.com
   brand: Virtual Technology
+
 - image: infomax.jpg
-  link: http://itdeurali.com
+  link: http://infomax.com.np
   brand: Infomax Pvt Ltd
+
 - image: sastoramro.png
-  link: http://itdeurali.com
+  link: https://www.sastoramro.com
   brand: SastoRamro
+
 - image: webpage.png
-  link: http://itdeurali.com
+  link: http://www.webpagenepal.com
   brand: WebPage Nepal
+
 - image: metashrine.jpg
-  link: http://itdeurali.com
+  link: http://metashrine.com
   brand: Metashrine
 
 

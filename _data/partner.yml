@@ -1,5 +1,5 @@
 - image: LBB.png
-  link: http://www.lumbinibikasbank.com/
+  link: http://www.lumbinibikasbank.com
   brand: Lumbini Bikash Bank Ltd
   type: Banking
 
@@ -9,21 +9,19 @@
   type: Internet
 
 - image: hotel-barahi.jpg
-  link: http://www.lumbinibikasbank.com/
+  link: http://www.barahi.com
   brand: Hotel Barahi
   type: Hospitality
 
 - image: offering-happiness.png
-  link: http://www.lumbinibikasbank.com/
+  link: http://www.offeringhappiness.com
   brand: Offering Happiness
   type: Happiness
 
 - image: backpackers.png
-  link: http://www.lumbinibikasbank.com/
   brand: Lakeside Backpackers Hostel
   type: Hostel
 
 - image: jojiju.png
-  link: http://www.lumbinibikasbank.com/
   brand: Jojiju Music
   type: Sound
