@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Genese CodeCamp 2018
-topline: Genese CodeCamp 2018
+topline: Genese CodeCamp
 welcome: CodeCamp 2018
 tagline: A codecamp on theme "Human AID"
 date: 18-20 July, 2018
