@@ -2,44 +2,54 @@
   class: in active 
   href: first-day
   schedule: 
-    - time: 9:00 AM to 11:00 AM 
-      work: inauguration and tea
-    - time: 11:00 AM to 2:00 PM 
-      work: Coding
-    - time: 2:00 PM to 3:00 PM
+    - time: 10:00 AM to 10:30 AM 
+      work: Arrival and registration
+    - time: 10:30 AM to 12:30 PM 
+      work: Inaguration Ceremony
+    - time: 12:30 PM to 2:30 PM
+      work: Sessions and Coding
+    - time: 2:30 PM to 3:00 PM
       work: Lunch
     - time: 3:00 PM to 5:00 PM
       work: Coding
-    - time: 5:00 PM to 6:00 PM
-      work: Hi-Tea and networking.
+    - time: 5:00 PM to 5:30 PM
+      work: Hi-Tea and networking
 
 - date: 19 July
   class:  
   href: second-day
   schedule: 
-    - time: 8:00 AM
-      work: Check in 
-    - time: 8:00 AM to 8:30 AM
-      work: Breakfast
-    - time: 8:30 AM to 1:30 PM
+    - time: 7:00-7:30 AM
+      work: Arrival and Tea
+    - time: 7:30 AM to 9:00 AM
       work: Coding
-    - time: 1:30 PM to 2:30 PM
+    - time: 9:30 AM to 10:00 PM
+      work: Presentation
+    - time: 10:00 PM to 1:00 PM
+      work: Coding
+    - time: 1:00 PM to 1:30 PM
       work: Lunch
-    - time: 2:30 PM to 5:00 PM
-      work: coding
-    - time: 5:00 PM to 5:30 PM
-      work: Hi-Tea
+    - time: 1:00 PM to55:30 PM
+      work: Coding
 
 - date: 20 July
   class:  
   href: third-day
   schedule: 
-    - time: 8:00 AM
-      work: Break fast
-    - time: 12:00 PM
-      work: Lunch time
-    - time: 12:30 PM
+    - time: 7:00 AM - 7:30 AM
+      work: Arrival + Tea
+    - time: 7:30 AM - 9:30 AM
+      work: Coding + Device Testing + github Commit
+    - time: 9:30 AM - 10:00 AM 
+      work: Breakfast
+    - time: 10:00 AM -1:00 PM
       work: Presentation
-    - time: 5:00 PM
-      work: Ending of Program
+    - time: 1:00 PM - 2:00 PM
+      work: Lunch
+    - time: 1:00 PM - 3:300 PM
+      work: Results and closing Ceremony
+
+
+
+
 
